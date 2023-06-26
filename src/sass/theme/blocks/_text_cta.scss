@@ -1,0 +1,25 @@
+.text_cta {
+
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    @media (min-width:576px) {
+        &__buttons {
+            flex-direction: row;
+        }
+    }
+
+    &__cta {
+        background-color: var(--col-secondary-400);
+        padding: 1.5rem;
+        border-radius: var(--border-1);
+        color: white;
+        box-shadow: var(--shadow-1);
+    }
+    &__phone {
+        font-size: var(--fs-500);
+    }
+}

@@ -1,0 +1,16 @@
+.full_width_text {
+    p { 
+        max-width: 90ch;
+    }
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    @media (min-width:576px) {
+        &__buttons {
+            flex-direction: row;
+        }
+    }
+}

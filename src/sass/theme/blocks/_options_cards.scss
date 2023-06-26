@@ -1,0 +1,124 @@
+.options_cards {
+    &__intro {
+        margin-bottom: 2rem;
+        max-width: min(80ch,90vw);
+    }
+    &__grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        // @media (min-width:768px)
+        // {
+        //     grid-template-columns: repeat(2, 1fr);
+        // }
+        // @media (min-width:992px) {
+        //     grid-template-columns: repeat(3, 1fr);
+        // }
+        // @media (min-width:1200px) {
+        //     grid-template-columns: repeat(4, 1fr);
+        // }
+    }
+
+    &__card {
+        background-color: transparent;
+        width: 100%;
+        @media (min-width:576px)
+        {
+            width: 48%;
+        }
+        @media (min-width:768px) {
+            width: 31%;
+            min-height: 240px;
+        }
+        @media (min-width:992px) {
+            width: 23%;
+            min-height: 250px;
+        }
+
+        width: 100%;
+        @media (min-width:992px) {
+            aspect-ratio: 6 / 5;
+        }
+        perspective: 1000px; /* Remove this if you don't want the 3D effect */
+        text-align: center;
+
+    }
+    &__inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+    }
+
+    &__front {
+        display: none;
+    }
+    &__back {
+        border: 1px solid var(--col-primary);
+        transform: rotateY(0deg);
+        border-radius: var(--border-2);
+        padding: 1rem;
+        height: 100%;
+        display: grid;
+        background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_2' data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 214.99 215'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %230C0D0E0D; %7D %3C/style%3E%3C/defs%3E%3Cg id='Layer_2-2' data-name='Layer 2'%3E%3Cg%3E%3Cpath class='cls-1' d='m129.37,104.44c0,12.63-6.79,20.59-22.7,20.59h-21.75v-41.17h21.75c15.91,0,22.7,7.95,22.7,20.59h0Z'/%3E%3Cpath class='cls-1' d='m214.99,107.5c0,59.37-48.13,107.5-107.49,107.5-7.74,0-15.3-.82-22.58-2.38v-55.77h24.79c41.87,0,60.36-25.27,60.36-52.4,0-30.18-20.12-52.87-60.36-52.87H44.92v143.33C17.72,175.4,0,143.52,0,107.5,0,48.13,48.13,0,107.5,0s107.49,48.13,107.49,107.5h0Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        background-size: contain;
+        @media (min-width:768px) {
+            background-size: 75%;
+        }
+        background-repeat: no-repeat;
+        background-position: center;
+
+        h3 {
+            margin-bottom: 0.5rem;
+        }
+        a {
+            align-self: end;
+        }
+    }
+
+    @media (hover: hover) and (min-width: 768px) {
+        &__card {
+            &:hover .options_cards__inner {
+                transform: rotateY(180deg);
+            }
+        }
+        &__front, &__back {
+            position: absolute;
+            height: 100%;
+            backface-visibility: hidden;
+        }
+        &__front {
+            display: grid;
+            place-content: center;
+            font-weight: var(--fw-900);
+            font-size: var(--fs-600);
+            color: #fff;
+            width: 100%;
+            padding: 1rem;
+            border-radius: var(--border-2);
+            border: 1px solid var(--col-primary);
+            background-color: var(--col-primary);
+            background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_2' data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 214.99 215'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23ffffff0D; %7D %3C/style%3E%3C/defs%3E%3Cg id='Layer_2-2' data-name='Layer 2'%3E%3Cg%3E%3Cpath class='cls-1' d='m129.37,104.44c0,12.63-6.79,20.59-22.7,20.59h-21.75v-41.17h21.75c15.91,0,22.7,7.95,22.7,20.59h0Z'/%3E%3Cpath class='cls-1' d='m214.99,107.5c0,59.37-48.13,107.5-107.49,107.5-7.74,0-15.3-.82-22.58-2.38v-55.77h24.79c41.87,0,60.36-25.27,60.36-52.4,0-30.18-20.12-52.87-60.36-52.87H44.92v143.33C17.72,175.4,0,143.52,0,107.5,0,48.13,48.13,0,107.5,0s107.49,48.13,107.49,107.5h0Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            background-size: 75%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        &__back {
+            transform: rotateY(180deg);
+        }
+    }
+
+    @media (hover: hover) and (min-width: 1200px) {
+        &__front {
+            font-size: var(--fs-700);
+        }
+    }
+
+    h3 {
+        font-size: var(--fs-500);
+        color: var(--col-primary);
+    }
+}

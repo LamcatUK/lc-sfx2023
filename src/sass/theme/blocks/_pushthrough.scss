@@ -1,0 +1,16 @@
+.pushthrough {
+    &__intro {
+        text-align: center;
+        background-color: var(--col-grey);
+        h2 {
+            text-transform: uppercase;
+        }
+        & > div {
+            max-width: 80ch;
+            margin: auto;
+        }
+    }
+    &__form {
+        background-color: var(--col-primary);
+    }
+}

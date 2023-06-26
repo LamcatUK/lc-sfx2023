@@ -1,0 +1,27 @@
+.btn {
+    transition: 
+        background-color var(--transition),
+        color var(--transition);
+    font-weight: var(--fw-600);
+    font-size: var(--fs-400);
+}
+.btn-secondary {
+    color: white;
+}
+.btn-highlight {
+    background-color: var(--col-highlight-400);
+    color: white;
+    &:hover {
+        border-color: var(--col-highlight-400);
+        color: var(--col-highlight-400);
+        background-color: white;
+    }
+}
+.btn-outline {
+    border: 1px solid var(--col-grey-900);
+    &:hover {
+        border: 1px solid var(--col-grey-900);
+        color: white;
+        background-color: var(--col-grey-900);
+    }
+}

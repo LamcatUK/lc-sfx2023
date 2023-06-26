@@ -1,0 +1,11 @@
+.accreditations {
+    &__badge {
+        img {
+            padding-inline: 0.5rem;
+            margin-inline: auto;
+            @media (min-width:576px) {
+                padding-inline: 3rem;
+            }
+        }
+    }
+}

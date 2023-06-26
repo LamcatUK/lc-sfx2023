@@ -1,0 +1,27 @@
+.bg--primary {
+    background-color: var(--col-primary-400);
+}
+.bg--grey {
+    background-color: var(--col-grey);
+}
+
+.bg--grad {
+    background-color: var(--col-primary-400);
+    background: linear-gradient(45deg, var(--col-primary-400) 50%, var(--col-secondary-400) 100%);
+    color: white;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 1rem;
+        height: 60%;
+        max-width: 90vw;
+        aspect-ratio: 10 / 6;
+        opacity: 0.2;
+        background-image: url(../img/greensward-icon--wo.svg);
+        background-size: contain;
+        background-position: bottom left;
+        background-repeat: no-repeat;
+    }
+}
