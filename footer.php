@@ -15,10 +15,6 @@ defined('ABSPATH') || exit;
 <footer class="footer pt-5">
 </footer>
 <div class="colophon">
-    <div class="container-xl py-2 text-center">
-        &copy; <?=date('Y')?> Strike Fight
-        Extreme
-    </div>
 </div>
 </div><!-- #page -->
 <?php wp_footer();

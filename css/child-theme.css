@@ -22664,6 +22664,12 @@ footer #footer-content {
   }
 }
 
+body {
+  display: grid;
+  min-height: 100vh;
+  place-content: center;
+}
+
 a,
 a.noline {
   text-decoration: none;
