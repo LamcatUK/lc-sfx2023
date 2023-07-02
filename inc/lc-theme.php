@@ -57,23 +57,23 @@ if (function_exists('acf_add_options_page')) {
 function widgets_init()
 {
     register_nav_menus(array(
-        'primary_nav' => __('Primary Nav', 'lc-greensward2023'),
+        'primary_nav' => __('Primary Nav', 'lc-sfx2023'),
     ));
     // register_nav_menus(array(
-    //     'top_nav' => __('Top Nav', 'lc-greensward2023'),
+    //     'top_nav' => __('Top Nav', 'lc-sfx2023'),
     // ));
 
     register_nav_menus(array(
-        'footer_menu1' => __('Footer Menu 1', 'lc-greensward2023'),
+        'footer_menu1' => __('Footer Menu 1', 'lc-sfx2023'),
     ));
     register_nav_menus(array(
-        'footer_menu2' => __('Footer Menu 2', 'lc-greensward2023'),
+        'footer_menu2' => __('Footer Menu 2', 'lc-sfx2023'),
     ));
     // register_nav_menus(array(
-    //     'footer_menu3' => __('Footer Menu 3', 'lc-greensward2023'),
+    //     'footer_menu3' => __('Footer Menu 3', 'lc-sfx2023'),
     // ));
     // register_nav_menus(array(
-    //     'footer_menu4' => __('Footer Menu 4', 'lc-greensward2023'),
+    //     'footer_menu4' => __('Footer Menu 4', 'lc-sfx2023'),
     // ));
 
     unregister_sidebar('hero');

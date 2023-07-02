@@ -18,15 +18,6 @@ session_start();
     <meta
         charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1">
-    <link rel="preload"
-        href="<?=get_stylesheet_directory_uri()?>/fonts/poppins-v20-latin-600.woff2"
-        as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload"
-        href="<?=get_stylesheet_directory_uri()?>/fonts/poppins-v20-latin-500.woff2"
-        as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload"
-        href="<?=get_stylesheet_directory_uri()?>/fonts/poppins-v20-latin-regular.woff2"
-        as="font" type="font/woff2" crossorigin="anonymous">
     <?php
 if (get_field('ga_property', 'options')) {
     ?>
@@ -80,33 +71,6 @@ if (get_field('bing_site_verification', 'options')) {
 
 wp_head();
 ?>
-
-    <script type="application/ld+json">
-        {
-            "@context": "http://schema.org",
-            "@type": "Organization",
-            "name": "GreenSward Sports Consultancy Limited",
-            "url": "https://www.greenswardsports.co.uk/",
-            "logo": "https://www.greenswardsports.co.uk/wp-content/theme/lc-greensward2023/img/greensward-logo.jpg",
-            "description": "Sportsground and landscape design and maintenance",
-            "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Monkton Combe Mill, Monkton Combe"
-                "addressRegion": "Bath",
-                "postalCode": "BA2 7HD",
-                "addressCountry": "UK"
-            },
-            "telephone": "+44 (0) 7972 630518",
-            "email": "info@greenswardsports.co.uk"
-        }
-    </script>
-    <!-- ,
-    "sameAs": [
-        "https://twitter.com/",
-        "https://www.facebook.com/",
-        "https://www.linkedin.com/company/"
-    ] -->
-
 </head>
 
 <body <?php body_class(); ?>
@@ -114,33 +78,3 @@ wp_head();
     <?php
 do_action('wp_body_open');
 ?>
-    <header id="wrapper-navbar" class="fixed-top">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-xl py-2 nav-top align-items-end">
-                <a href="/" class="text-lg-center logo-container" aria-label="PPI Homepage"></a>
-                <div class="button-container d-lg-none">
-                    <button class="navbar-toggler mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
-                        aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                </div>
-
-                <div class="collapse navbar-collapse" id="navbar">
-                    <?php
-                    wp_nav_menu(
-    array(
-                                                'theme_location'  => 'primary_nav',
-                                                'container_class' => 'w-100',
-                                                // 'container_id'    => 'primaryNav',
-                                                'menu_class'      => 'navbar-nav justify-content-start justify-content-lg-around w-100',
-                                                'fallback_cb'     => '',
-                                                'menu_id'         => 'navbarr',
-                                                'depth'           => 3,
-                                                'walker'          => new Understrap_WP_Bootstrap_Navwalker()
-                                                )
-);
-?>
-                </div>
-            </div>
-        </nav>
-    </header>

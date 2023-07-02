@@ -7,12 +7,12 @@ function cb_register_post_types()
      */
 
     $labels = [
-       "name" => esc_html__("Testimonials", "lc-greensward2023"),
-       "singular_name" => esc_html__("Testimonial", "lc-greensward2023"),
+       "name" => esc_html__("Testimonials", "lc-sfx2023"),
+       "singular_name" => esc_html__("Testimonial", "lc-sfx2023"),
     ];
 
     $args = [
-        "label" => esc_html__("Testimonials", "lc-greensward2023"),
+        "label" => esc_html__("Testimonials", "lc-sfx2023"),
         "labels" => $labels,
         "description" => "",
         "public" => true,
@@ -40,12 +40,12 @@ function cb_register_post_types()
     register_post_type("testimonials", $args);
 
     $labels = [
-       "name" => esc_html__("Case Studies", "lc-greensward2023"),
-       "singular_name" => esc_html__("Case Study", "lc-greensward2023"),
+       "name" => esc_html__("Case Studies", "lc-sfx2023"),
+       "singular_name" => esc_html__("Case Study", "lc-sfx2023"),
     ];
 
     $args = [
-        "label" => esc_html__("Case Studies", "lc-greensward2023"),
+        "label" => esc_html__("Case Studies", "lc-sfx2023"),
         "labels" => $labels,
         "description" => "",
         "public" => true,
