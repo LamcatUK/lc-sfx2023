@@ -11,11 +11,6 @@
 defined('ABSPATH') || exit;
 
 ?>
-<div id="footer-top"></div>
-<footer class="footer pt-5">
-</footer>
-<div class="colophon">
-</div>
 </div><!-- #page -->
 <?php wp_footer();
 if (get_field('gtm_property', 'options')) {
