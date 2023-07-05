@@ -1,27 +1,5 @@
-/* poppins-regular - latin */
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* poppins-500 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    src: url('../fonts/poppins-v20-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* poppins-600 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
+
+@import url("https://use.typekit.net/oga6bue.css");
 
 html {
     // font-size: var(--fs-400);
@@ -29,17 +7,25 @@ html {
 }
 
 body {
-    font-family: var(--font-body);
+    font-family: var(--ff-body);
     font-weight: var(--fw-400);
     font-style: normal;
     font-size: 1rem;
-    color: var(--col-grey-900);
+    letter-spacing: 0.02em;
+    color: var(--col-dark);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
+
+.headline {
+    font-family: var(--ff-headlines);
+    font-weight: var(--fw-900);
+    font-style: normal;
+}
+
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, .h99 {
-    font-family: var(--font-headings);
+    font-family: var(--ff-headings);
     font-weight: var(--fw-900);
     font-style: normal;
     margin-bottom: 1rem;

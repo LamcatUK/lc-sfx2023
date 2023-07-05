@@ -12,6 +12,13 @@ defined('ABSPATH') || exit;
 
 ?>
 </div><!-- #page -->
+<footer class="colophon">
+    <div class="container-xl d-md-flex justify-content-between">
+        <div>&copy; <?=date('Y')?> SFX
+            Championships.</div>
+        <div>Site by <a href="https://www.lamcat.co.uk/">Lamcat</a></div>
+    </div>
+</footer>
 <?php wp_footer();
 if (get_field('gtm_property', 'options')) {
     ?>
@@ -23,6 +30,21 @@ if (get_field('gtm_property', 'options')) {
 <?php
 }
 ?>
+<script>
+    function jumpTo(anchor_id) {
+        var url = location.href; //Saving URL without hash.
+        location.href = "#" + anchor_id; //Navigate to the target element.
+        history.replaceState(null, null, url); //method modifies the current history entry.
+    }
+
+    function scrollSmoothTo(elementId) {
+        var element = document.getElementById(elementId);
+        element.scrollIntoView({
+            block: 'start',
+            behavior: 'smooth'
+        });
+    }
+</script>
 </body>
 
 </html>

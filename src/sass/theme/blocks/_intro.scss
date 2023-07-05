@@ -1,0 +1,16 @@
+.intro {
+    background-color: var(--col-primary-400);
+    font-family: var(--ff-headlines);
+    font-size: var(--fs-900);
+    font-weight: var(--fw-900);
+    line-height: 1;
+    color: white;
+    text-align: center;
+    text-wrap: balance;
+    span {
+        color: var(--col-highlight);
+    }
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}

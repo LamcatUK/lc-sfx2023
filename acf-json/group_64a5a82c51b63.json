@@ -1,10 +1,10 @@
 {
-    "key": "group_647cab2a2a5a1",
-    "title": "LC Form Block",
+    "key": "group_64a5a82c51b63",
+    "title": "LC LP Form",
     "fields": [
         {
-            "key": "field_647cab2aecca8",
-            "label": "LC Form Block",
+            "key": "field_64a5a82c73f32",
+            "label": "LC LP Form",
             "name": "",
             "aria-label": "",
             "type": "message",
@@ -16,59 +16,52 @@
                 "class": "",
                 "id": ""
             },
-            "message": "Leave blank to use defaults defined in Site-Wide Settings.",
+            "message": "",
             "new_lines": "wpautop",
             "esc_html": 0
         },
         {
-            "key": "field_6491f2bf6529b",
-            "label": "Theme",
-            "name": "theme",
+            "key": "field_64a5a90950126",
+            "label": "ID",
+            "name": "id",
             "aria-label": "",
-            "type": "radio",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "50",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "Dark": "Dark",
-                "Light": "Light"
-            },
-            "default_value": "Light",
-            "return_format": "value",
-            "allow_null": 0,
-            "other_choice": 0,
-            "layout": "horizontal",
-            "save_other_choice": 0
-        },
-        {
-            "key": "field_647cab4feccab",
-            "label": "Form ID",
-            "name": "form_id",
-            "aria-label": "",
-            "type": "number",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "50",
+                "width": "",
                 "class": "",
                 "id": ""
             },
             "default_value": "",
-            "min": "",
-            "max": "",
+            "maxlength": "",
             "placeholder": "",
-            "step": "",
             "prepend": "",
             "append": ""
         },
         {
-            "key": "field_647cab3becca9",
+            "key": "field_64a5a83b73f33",
+            "label": "BG Title",
+            "name": "bg_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_64a5a8a173f34",
             "label": "Title",
             "name": "title",
             "aria-label": "",
@@ -88,9 +81,9 @@
             "append": ""
         },
         {
-            "key": "field_647cab40eccaa",
-            "label": "Intro",
-            "name": "intro",
+            "key": "field_64a5a8a773f35",
+            "label": "Content",
+            "name": "content",
             "aria-label": "",
             "type": "textarea",
             "instructions": "",
@@ -103,9 +96,31 @@
             },
             "default_value": "",
             "maxlength": "",
-            "rows": 2,
+            "rows": "",
             "placeholder": "",
             "new_lines": "br"
+        },
+        {
+            "key": "field_64a5a8b073f36",
+            "label": "Form ID",
+            "name": "form_id",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "min": "",
+            "max": "",
+            "placeholder": "",
+            "step": "",
+            "prepend": "",
+            "append": ""
         }
     ],
     "location": [
@@ -113,7 +128,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/lc-form-block"
+                "value": "acf\/lc-lp-form"
             }
         ]
     ],
@@ -126,5 +141,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1687286671
+    "modified": 1688582032
 }

@@ -25,3 +25,10 @@
         background-color: var(--col-grey-900);
     }
 }
+
+.wpcf-7 input[type="submit"] {
+    &:disabled {
+        border-color: var(--col-highlight-400);
+        color: white;
+    }
+}

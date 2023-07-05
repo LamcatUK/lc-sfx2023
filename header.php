@@ -77,4 +77,20 @@ wp_head();
     <?php understrap_body_attributes(); ?>>
     <?php
 do_action('wp_body_open');
+
+/*
+    <header id="wrapper-navbar">
+        <div class="container-xl d-flex align-items-center">
+            <img src="<?=get_stylesheet_directory_uri()?>/img/sfx-logo.png"
+                alt="">
+            <div class="menu">
+                <a href="#about">About SFX</a>
+                <a href="#athletes">For Athletes</a>
+                <a href="#spectators">For Spectators</a>
+                <a href="#investors">For Investors</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </header>
+*/
 ?>

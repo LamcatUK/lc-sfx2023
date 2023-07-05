@@ -44,14 +44,18 @@ footer {
 
 }
 .colophon {
-    background-color: var(--col-brown-400);
-    color: var(--col-grey);
+    background-color: black;
+    color: hsl(255 100% 100% / 0.8);
     font-size: var(--fs-200);
+    text-align: center;
+    padding-block: 0.5rem;
+    display: flex;
+    justify-content: space-between;
     a {
-        color: var(--col-grey);
+        color: white;
         transition: var(--transition);
         &:hover {
-            color: var(--col-grey);
+            color: white;
             opacity: 0.6;
         }
         &::after{
