@@ -10,8 +10,12 @@
         </div>
         <div class="row g-4">
             <div class="col-md-6">
-                <div class="pe-4">
+                <div class="pe-4 mb-4">
                     <?=get_field('content')?>
+                </div>
+                <h2 class="h3">Connect:</h2>
+                <div class="social_icons">
+                    <?=do_shortcode('[social_icons]')?>
                 </div>
             </div>
             <div class="col-md-6">

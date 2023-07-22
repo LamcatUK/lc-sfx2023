@@ -94,5 +94,13 @@
 }
 
 .form_section {
-    background-color: var(--col-primary-400);;
+    background-color: var(--col-primary-400);
+
+    .social_icons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: space-around;
+        font-size: var(--fs-600);
+    }
 }

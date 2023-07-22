@@ -76,6 +76,12 @@ function social_icons()
     target="_blank"><i class="fa-brands fa-youtube"></i></a>
 <?php
     }
+    if (get_field('tiktok_url', 'options') ?? null) {
+        ?>
+<a href="<?=get_field('tiktok_url', 'options')?>"
+    target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+<?php
+    }
     $ob_str = ob_get_contents();
     ob_end_clean();
     return $ob_str;
