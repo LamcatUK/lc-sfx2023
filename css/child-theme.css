@@ -22964,7 +22964,7 @@ footer #footer-content {
   left: -2rem;
 }
 .lp_section__body {
-  max-width: 75ch;
+  max-width: 95ch;
 }
 .lp_section__body span {
   color: var(--col-highlight-400);
@@ -22983,6 +22983,10 @@ footer #footer-content {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+}
+.lp_section a {
+  color: var(--col-highlight-400);
+  text-decoration: underline;
 }
 
 .form_section {

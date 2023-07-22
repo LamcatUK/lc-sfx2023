@@ -64,7 +64,7 @@
     }
 
     &__body {
-        max-width: 75ch;
+        max-width: 95ch;
         span {
             color: var(--col-highlight-400);
         }
@@ -85,6 +85,11 @@
         display: flex;
         flex-wrap: wrap;
         gap: 1rem;
+    }
+
+    a {
+        color: var(--col-highlight-400);
+        text-decoration: underline;
     }
 }
 
