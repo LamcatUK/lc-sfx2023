@@ -96,6 +96,12 @@
 .form_section {
     background-color: var(--col-primary-400);
 
+    .content {
+        span {
+            color: var(--col-highlight-400);
+        }
+    }
+
     .social_icons {
         display: flex;
         flex-wrap: wrap;

@@ -10,7 +10,7 @@
         </div>
         <div class="row g-4">
             <div class="col-md-6">
-                <div class="pe-4 mb-4">
+                <div class="pe-4 mb-4 content">
                     <?=get_field('content')?>
                 </div>
                 <h2 class="h3">Connect:</h2>

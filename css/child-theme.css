@@ -22992,6 +22992,9 @@ footer #footer-content {
 .form_section {
   background-color: var(--col-primary-400);
 }
+.form_section .content span {
+  color: var(--col-highlight-400);
+}
 .form_section .social_icons {
   display: flex;
   flex-wrap: wrap;
