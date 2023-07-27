@@ -23207,6 +23207,10 @@ section {
   accent-color: var(--col-primary) !important;
 }
 
+.wpcf7 select {
+  border-radius: 0;
+}
+
 /*
 var all = document.getElementsByTagName("*"), i = 0, rect, docWidth = document.documentElement.offsetWidth;
 for (; i < all.length; i++) {
